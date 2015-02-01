@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="56dp">
+<ImageView android:id="@+id/ImPhoto" android:layout_marginLeft="10dp" android:layout_height="38dp" android:layout_width="38dp" android:background="@drawable/photo"></ImageView>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="fill_parent" android:layout_marginLeft="15dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TvDialContactName"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TvNumAddr"></TextView>
+</LinearLayout>
+</LinearLayout>
