@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.badgeview"
+    android:versionCode="000801"
+    android:versionName="0.8.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application>
+    </application>
+
+</manifest>
