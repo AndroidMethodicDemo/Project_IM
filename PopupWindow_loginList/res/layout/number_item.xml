@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dip" >
+
+<!--     设置子布局以块的形式获取焦点.  -->
+<!--     android:descendantFocusability="blocksDescendants" -->
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:text="129318723" />
+
+    <ImageButton
+        android:id="@+id/ib_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delete" />
+
+</LinearLayout>
