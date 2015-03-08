@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/datetime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:minHeight="60dip"
+        android:paddingLeft="32dip"
+        android:paddingRight="32dip"
+        android:text="选择日期和时间"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/titleDivider"
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:gravity="fill_horizontal"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_strong_holo" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/set_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="设置时间:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:id="@+id/btn_set"
+            android:text="设置"
+            android:layout_weight="1"/>
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:id="@+id/btn_cancel"
+            android:text="取消"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

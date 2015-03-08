@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="@dimen/layout_height"
+            android:background="@drawable/textbox_first"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/tv_account"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:background="@drawable/textbox_last"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/tv_pwd"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="@dimen/layout_height"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/btn_green_bg"
+                android:text="@string/btn_register"
+                android:textColor="@color/text_white_bg"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@color/btn_green_bg"
+                android:text="@string/btn_login"
+                android:textColor="@color/text_white_bg"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/layout_height"
+            android:layout_marginTop="30dip"
+            android:gravity="center_horizontal"
+            android:text="点击生成测试账号按钮，自动生成登陆账号！"
+            android:textColor="#ff0000" />
+    </LinearLayout>
+
+</LinearLayout>

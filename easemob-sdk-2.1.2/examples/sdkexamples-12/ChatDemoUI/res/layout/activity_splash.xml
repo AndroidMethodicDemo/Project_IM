@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_gradient"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_uidemo" >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="bottom"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="环信DEMO"
+        android:textColor="#444444"
+        android:textSize="35dip"
+        android:typeface="serif" >
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="bottom"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="#444444"
+        android:textSize="20dip"
+        android:typeface="serif" >
+    </TextView>
+
+</LinearLayout>

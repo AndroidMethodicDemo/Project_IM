@@ -1,0 +1,25 @@
+<com.zihao.ui.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!-- 左侧菜单页面 -->
+
+    <include layout="@layout/activity_leftmenu" />
+
+    <com.zihao.ui.MyRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <!-- headbanner -->
+
+        <include layout="@layout/middleview" />
+    </com.zihao.ui.MyRelativeLayout>
+
+</com.zihao.ui.DragLayout>
